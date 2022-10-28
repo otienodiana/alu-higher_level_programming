@@ -19,5 +19,5 @@ else:
     elif la[2] == "+":
         print("{:d} + {:d} = {:d}".format(a, b, extra.add(a, b)))
     else:
-        `print("Unknown operator. Available operators: +, -, * and /")
+        print("Unknown operator. Available operators: +, -, * and /")
                        exit(1)
