@@ -8,8 +8,6 @@ def max_integer(my_list=[]):
         else:
             be1 = my_list[0]
             be2 = max_integer(my_list[1:])
-
-        
             if be1 > be2:
                 return be1
             else:
