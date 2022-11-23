@@ -1,1 +1,5 @@
-Executable File  0 lines (0 sloc)  0 Bytes
+-- create tables
+CREATE TABLE IF NOT EXISTS first_table (
+	id INT,
+	name VARCHAR(256)
+);
