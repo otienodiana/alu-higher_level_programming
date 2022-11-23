@@ -1,5 +1,1 @@
--- Write a script that creates a table called first_table in the current database in your MySQL server.
-CREAT TABLE IF NOT EXISTS first_table(
-	    id int,
-	    name varchar(255)
-);
+Executable File  0 lines (0 sloc)  0 Bytes
