@@ -11,7 +11,6 @@ def matrix_divided(matrix, div):
     else raises a TypeError exception with a mssg
     """
 
-
     if not isinstance(matrix, (list,)):
         raise TypeError("matrix must be a matrix "
                         "(list of lists) of integers/floats")
