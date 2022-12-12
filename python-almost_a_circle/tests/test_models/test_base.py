@@ -71,5 +71,4 @@ class TestBase(unittest.TestCase):
                              '[{"id": 1, "width": 1, '
                              '"height": 2, "x": 0, "y": 0}]')
 
-if __name__ == '__main__':
-    unittest.main()
+  
