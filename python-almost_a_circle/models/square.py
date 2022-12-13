@@ -6,14 +6,13 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """"
-
-             Class Square inheriting Rectangle
-             Attr :
-                     id: number
-                     size: number
-                     x: number
-                     y: number
-                                                                        """
+            Class Square inheriting Rectangle
+            Attr :
+                    id: number
+                    size: number
+                    x: number
+                    y: number
+        """
 
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
@@ -44,14 +43,13 @@ class Square(Rectangle):
                 self.y = args[3]
             except IndexError:
                 pass
-
         elif len(kwargs) != 0:
             self.id = kwargs["id"] if "id" in kwargs else self.id
             self.size = kwargs["size"] if "size" in kwargs \
                 else self.size
             self.x = kwargs["x"] if "x" in kwargs else self.x
-                                                                        self.y = kwargs["y"] if "y" in kwargs else self.y
+            self.y = kwargs["y"] if "y" in kwargs else self.y
 
-                                                                                                                            def to_dictionary(self):
+    def to_dictionary(self):
         """returns dictionary"""
         return {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
