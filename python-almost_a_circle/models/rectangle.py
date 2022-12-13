@@ -13,7 +13,7 @@ class Rectangle(Base):
                 height: number
                 x: number
                 y: number
-                                                                """
+    """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -27,14 +27,14 @@ class Rectangle(Base):
         """the width getter"""
         return self.__width
 
-     @width.setter
-     def width(self, value):
-         """the width setter"""
-         if type(value) != int:
-             raise TypeError("width must be an integer")
-         if value <= 0:
-             raise ValueError("width must be > 0")
-         self.__width = value
+    @width.setter
+    def width(self, value):
+        """the width setter"""
+        if type(value) != int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = value
 
     @property
     def height(self):
@@ -114,13 +114,12 @@ class Rectangle(Base):
             self.x = kwargs["x"] if "x" in kwargs else self.x
             self.y = kwargs["y"] if "y" in kwargs else self.y
 
-
-  def to_dictionary(self):
-      """returns the dictionary representation of a Rectangle"""
-      return {
-          'id': self.id,
-          'width': self.width,
-          'height': self.height,
-          'x': self.x,
-          'y': self.y
-      }
+    def to_dictionary(self):
+        """returns the dictionary representation of a Rectangle"""
+        return {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
