@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-'''a script that deletes all State objects with a name
-containing the letter a from the database hbtn_0e_6_usa'''
+'''a script that adds the State object
+“Louisiana” to the database hbtn_0e_6_usa'''
+
 
 import sys
 from model_state import Base, State
@@ -16,11 +17,8 @@ if __name__ == "__main__":
     session = Session()
     Base.metadata.create_all(engine)
 
-    states = session.query(State).filter(State.name.contains('a')).all()
-
-    for state in states:
-        session.delete(state)
-
+    state = State(name="Louisiana")
+    session.add(state)
     session.commit()
-
+    print(state.id)
     session.close()
