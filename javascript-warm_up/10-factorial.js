@@ -1,8 +1,8 @@
 #!/usr/bin/node
-// a script that computes and prints a factorial
+// a script that performs and prints a factorial
 function factorial (num) {
  if (isNaN(num) || num < 0) {
-    return 1;
+   return 1;
  } else if (num === 0) {
    return 1;
  } else {
