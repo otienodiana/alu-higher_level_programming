@@ -1,3 +1,4 @@
+le File  6 lines (6 sloc)  200 Bytes
 #!/usr/bin/node
 // a script that reads and prints the content of a file
 const fs = require('fs');
